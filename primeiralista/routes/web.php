@@ -64,3 +64,13 @@ Route::post('/listaex4', function(Request $request){
     $area = $alt * $larg;
     return view('lista.ex4', compact('area'));
 });
+
+Route::get('ex5', function(){
+    return view('/lista.ex5');
+});
+
+Route::post('/listaex5', function(Request $request){
+    $raio = floatval($request->input('raio'));
+    $area = M_PI * ($raio*$raio);
+    return view('lista.ex5', compact('area'));
+});
