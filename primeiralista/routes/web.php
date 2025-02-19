@@ -95,3 +95,12 @@ Route::post('/listaex7', function (Request $request) {
     $peri = 2 * M_PI * $raio;
     return view('lista.ex7', compact('peri'));
 });
+Route::get('ex8', function () {
+    return view('/lista.ex8');
+});
+
+Route::post('/listaex8', function (Request $request) {
+    $raio = floatval($request->input('raio')); //colocar fórmula para calcular potencia
+    $pot = 2 * M_PI * $raio;
+    return view('lista.ex8', compact('pot'));
+});
