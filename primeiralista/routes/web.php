@@ -33,6 +33,7 @@ Route::post('/listaex1', function (Request $request) { //sempre que for usar pos
     $media = ($nota1 + $nota2 + $nota3) / 3;
     return view('lista.ex1', compact('media'));
 });
+
 Route::get('ex2', function(){
     return view('/lista.ex2');
 });
@@ -40,5 +41,15 @@ Route::get('ex2', function(){
 Route::post('/listaex2', function(Request $request){
     $grau = floatval($request->input('grau'));
     $grauconv = ($grau * 9/5) + 32;
-    return view('lista.ex2', compact('grauconv','grau' ));
+    return view('lista.ex2', compact('grauconv','grau'));
+});
+
+Route::get('ex3', function(){
+    return view('/lista.ex3');
+});
+
+Route::post('/listaex3', function(Request $request){
+    $grau = floatval($request->input('grau'));
+    $grauconv = ($grau - 32) * (5/9);
+    return view('lista.ex3', compact('grau','grauconv'));
 });
