@@ -53,3 +53,14 @@ Route::post('/listaex3', function(Request $request){
     $grauconv = ($grau - 32) * (5/9);
     return view('lista.ex3', compact('grau','grauconv'));
 });
+
+Route::get('ex4', function(){
+    return view('/lista.ex4');
+});
+
+Route::post('/listaex4', function(Request $request){
+    $alt = floatval($request->input('altura'));
+    $larg = floatval($request->input('largura'));
+    $area = $alt * $larg;
+    return view('lista.ex4', compact('area'));
+});

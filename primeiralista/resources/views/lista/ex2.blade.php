@@ -10,8 +10,8 @@
     @csrf <!-- sempre usar para garantir a segurança no formulário -->
 
     <div class="mb-3">
-        <label for="nota1" class="form-label">Digite a temperatura em °C:</label>
-        <input type="number" id="grau" name="grau" class="form-control" required="">
+        <label for="grau" class="form-label">Digite a temperatura em °C:</label>
+        <input type="float" id="grau" name="grau" class="form-control" required="">
     </div>
 
     <button type="submit" class="btn btn-primary">Converter</button>

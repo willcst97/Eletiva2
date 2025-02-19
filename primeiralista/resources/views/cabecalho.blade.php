@@ -20,7 +20,7 @@
             <li><a class="dropdown-item" href="/ex1">Exercício 01</a></li>
             <li><a class="dropdown-item" href="/ex2">Exercício 02</a></li>
             <li><a class="dropdown-item" href="/ex3">Exercício 03</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="/ex4">Exercício 04</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
