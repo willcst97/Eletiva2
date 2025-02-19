@@ -1,11 +1,11 @@
-@extends('layout') <!-- layout básico par todas as páginas -->
+@extends('layout') <!-- layout básico para todas as páginas -->
 
 @section('conteudo')
 
-<h2 class="mb-3">Calcular a área de um retângulo.</h2>
+<h2 class="mb-3">Calcular o perímetro de um retângulo.</h2>
 
 <!-- abaixo o código do formulário -->
-<form method="post" action="/listaex4"> <!-- sempre adicionar esse action para o laravel definindo a rota-->
+<form method="post" action="/listaex6"> <!-- sempre adicionar esse action para o laravel definindo a rota-->
 
     @csrf <!-- sempre usar para garantir a segurança no formulário -->
 
@@ -22,10 +22,10 @@
     <button type="submit" class="btn btn-primary">Calcular</button>
 </form>
 
-@isset($area)
+@isset($peri)
 <!-- retorno do resultado da conta -->
 <div class="mt-3 alert alert-success" role="alert">
-    A área do retângulo é {{number_format($area, 2, ',')}}.
+    A área do círculo é {{number_format($peri, 2, ',')}}.
 </div>
 @endisset
 

@@ -34,43 +34,54 @@ Route::post('/listaex1', function (Request $request) { //sempre que for usar pos
     return view('lista.ex1', compact('media'));
 });
 
-Route::get('ex2', function(){
+Route::get('ex2', function () {
     return view('/lista.ex2');
 });
 
-Route::post('/listaex2', function(Request $request){
+Route::post('/listaex2', function (Request $request) {
     $grau = floatval($request->input('grau'));
-    $grauconv = ($grau * 9/5) + 32;
-    return view('lista.ex2', compact('grauconv','grau'));
+    $grauconv = ($grau * 9 / 5) + 32;
+    return view('lista.ex2', compact('grauconv', 'grau'));
 });
 
-Route::get('ex3', function(){
+Route::get('ex3', function () {
     return view('/lista.ex3');
 });
 
-Route::post('/listaex3', function(Request $request){
+Route::post('/listaex3', function (Request $request) {
     $grau = floatval($request->input('grau'));
-    $grauconv = ($grau - 32) * (5/9);
-    return view('lista.ex3', compact('grau','grauconv'));
+    $grauconv = ($grau - 32) * (5 / 9);
+    return view('lista.ex3', compact('grau', 'grauconv'));
 });
 
-Route::get('ex4', function(){
+Route::get('ex4', function () {
     return view('/lista.ex4');
 });
 
-Route::post('/listaex4', function(Request $request){
+Route::post('/listaex4', function (Request $request) {
     $alt = floatval($request->input('altura'));
     $larg = floatval($request->input('largura'));
     $area = $alt * $larg;
     return view('lista.ex4', compact('area'));
 });
 
-Route::get('ex5', function(){
+Route::get('ex5', function () {
     return view('/lista.ex5');
 });
 
-Route::post('/listaex5', function(Request $request){
+Route::post('/listaex5', function (Request $request) {
     $raio = floatval($request->input('raio'));
-    $area = M_PI * ($raio*$raio);
+    $area = M_PI * ($raio * $raio);
     return view('lista.ex5', compact('area'));
+});
+
+Route::get('ex6', function () {
+    return view('/lista.ex6');
+});
+
+Route::post('/listaex6', function (Request $request) {
+    $alt = floatval($request->input('altura'));
+    $larg = floatval($request->input('largura'));
+    $peri = 2 * $alt + 2 * $larg;
+    return view('lista.ex6', compact('peri'));
 });
