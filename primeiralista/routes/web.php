@@ -85,3 +85,13 @@ Route::post('/listaex6', function (Request $request) {
     $peri = 2 * $alt + 2 * $larg;
     return view('lista.ex6', compact('peri'));
 });
+
+Route::get('ex7', function () {
+    return view('/lista.ex7');
+});
+
+Route::post('/listaex7', function (Request $request) {
+    $raio = floatval($request->input('raio'));
+    $peri = 2 * M_PI * $raio;
+    return view('lista.ex7', compact('peri'));
+});

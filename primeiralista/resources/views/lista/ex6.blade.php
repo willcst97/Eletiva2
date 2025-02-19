@@ -25,7 +25,7 @@
 @isset($peri)
 <!-- retorno do resultado da conta -->
 <div class="mt-3 alert alert-success" role="alert">
-    A área do círculo é {{number_format($peri, 2, ',')}}.
+    O perímetro do retângulo é {{number_format($peri, 2, ',')}}.
 </div>
 @endisset
 
