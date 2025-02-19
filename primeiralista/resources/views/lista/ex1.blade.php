@@ -2,6 +2,8 @@
 
 @section('conteudo')
 
+<h2 class="mb-3">Média de 3 notas</h2>
+
 <!-- abaixo o código do formulário gerado pela aplicação da professora -->
 <form method="post" action="/listaex1"> <!-- sempre adicionar esse action para o laravel definindo a rota-->
 
@@ -25,8 +27,11 @@
     <button type="submit" class="btn btn-primary">Enviar</button>
 </form>
 
-    @isset($media)
-        A média é {{$media}} <!-- retorno do resultado da conta -->
-    @endisset
+@isset($media)
+<div class="mt-3 alert alert-success" role="alert">
+    A média é das 3 notas é {{$media}}.
+</div>
+<!-- retorno do resultado da conta -->
+@endisset
 
 @endsection

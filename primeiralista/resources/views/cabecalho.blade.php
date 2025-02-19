@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Lista Eletiva II</a>
+    <a class="navbar-brand" href="#">Lista Eletiva II - Programação WEB</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -17,9 +17,9 @@
             Primeira lista
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="/ex1">Exercício 1</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="/ex1">Exercício 01</a></li>
+            <li><a class="dropdown-item" href="/ex2">Exercício 02</a></li>
+            <li><a class="dropdown-item" href="/ex3">Exercício 03</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -40,10 +40,6 @@
           <a class="nav-link disabled" aria-disabled="true">conteúdo didático</a>
         </li>
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
     </div>
   </div>
 </nav>
