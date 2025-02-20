@@ -95,6 +95,7 @@ Route::post('/listaex7', function (Request $request) {
     $peri = 2 * M_PI * $raio;
     return view('lista.ex7', compact('peri'));
 });
+
 Route::get('ex8', function () {
     return view('/lista.ex8');
 });
@@ -102,6 +103,16 @@ Route::get('ex8', function () {
 Route::post('/listaex8', function (Request $request) {
     $base = floatval($request->input('base'));
     $exp = floatval($request->input('expoente'));
-    $pot = pow($base,$exp);
+    $pot = pow($base, $exp);
     return view('lista.ex8', compact('pot'));
+});
+
+Route::get('ex9', function () {
+    return view('/lista.ex9');
+});
+
+Route::post('/listaex9', function (Request $request) {
+    $metro = floatval($request->input('metro'));
+    $cm = $metro * 100;
+    return view('lista.ex9', compact('metro','cm'));
 });

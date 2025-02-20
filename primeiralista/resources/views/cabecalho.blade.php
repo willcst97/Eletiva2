@@ -10,7 +10,7 @@
           <a class="nav-link active" aria-current="page" href="https://github.com/willcst97">github.com/willcst97</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/exer1">Exemplo 1 de formulário</a>
+          <a class="nav-link" href="/exer1">Teste</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -25,7 +25,7 @@
             <li><a class="dropdown-item" href="/ex6">Exercício 06</a></li>
             <li><a class="dropdown-item" href="/ex7">Exercício 07</a></li>
             <li><a class="dropdown-item" href="/ex8">Exercício 08</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="/ex9">Exercício 09</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
