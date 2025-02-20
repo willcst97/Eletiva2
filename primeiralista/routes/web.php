@@ -114,7 +114,7 @@ Route::get('ex9', function () {
 Route::post('/listaex9', function (Request $request) {
     $metro = floatval($request->input('metro'));
     $cm = $metro * 100;
-    return view('lista.ex9', compact('metro','cm'));
+    return view('lista.ex9', compact('metro', 'cm'));
 });
 
 Route::get('ex10', function () {
@@ -124,5 +124,16 @@ Route::get('ex10', function () {
 Route::post('/listaex10', function (Request $request) {
     $km = floatval($request->input('km'));
     $mi = $km * 0.621371;
-    return view('lista.ex10', compact('km','mi'));
+    return view('lista.ex10', compact('km', 'mi'));
+});
+
+Route::get('ex11', function () {
+    return view('/lista.ex11');
+});
+
+Route::post('/listaex11', function (Request $request) {
+    $altura = floatval($request->input('altura'));
+    $peso = floatval($request->input('peso'));
+    $imc = $peso / ($altura * $altura);
+    return view('lista.ex11', compact('imc'));
 });
