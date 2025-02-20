@@ -5,7 +5,7 @@
 <h2 class="mb-3">Calcular potência.</h2>
 
 <!-- abaixo o código do formulário -->
-<form method="post" action="/listaex6"> <!-- sempre adicionar esse action para o laravel definindo a rota-->
+<form method="post" action="/listaex8"> <!-- sempre adicionar esse action para o laravel definindo a rota-->
 
     @csrf <!-- sempre usar para garantir a segurança no formulário -->
 
@@ -15,7 +15,7 @@
     </div>
 
     <div class="mb-3">
-        <label for="expoente" class="form-label">Digite ao expoente da potência:</label>
+        <label for="expoente" class="form-label">Digite o expoente da potência:</label>
         <input type="float" id="expoente" name="expoente" class="form-control" required="">
     </div>
 

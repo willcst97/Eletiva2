@@ -24,7 +24,7 @@
             <li><a class="dropdown-item" href="/ex5">Exercício 05</a></li>
             <li><a class="dropdown-item" href="/ex6">Exercício 06</a></li>
             <li><a class="dropdown-item" href="/ex7">Exercício 07</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="/ex8">Exercício 08</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>

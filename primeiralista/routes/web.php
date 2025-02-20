@@ -100,7 +100,8 @@ Route::get('ex8', function () {
 });
 
 Route::post('/listaex8', function (Request $request) {
-    $raio = floatval($request->input('raio')); //colocar fórmula para calcular potencia
-    $pot = 2 * M_PI * $raio;
+    $base = floatval($request->input('base'));
+    $exp = floatval($request->input('expoente'));
+    $pot = pow($base,$exp);
     return view('lista.ex8', compact('pot'));
 });
