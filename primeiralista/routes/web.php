@@ -116,3 +116,13 @@ Route::post('/listaex9', function (Request $request) {
     $cm = $metro * 100;
     return view('lista.ex9', compact('metro','cm'));
 });
+
+Route::get('ex10', function () {
+    return view('/lista.ex10');
+});
+
+Route::post('/listaex10', function (Request $request) {
+    $km = floatval($request->input('km'));
+    $mi = $km * 0.621371;
+    return view('lista.ex10', compact('km','mi'));
+});
