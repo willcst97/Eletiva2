@@ -28,12 +28,10 @@
             <li><a class="dropdown-item" href="/ex9">Exercício 09</a></li>
             <li><a class="dropdown-item" href="/ex10">Exercício 10</a></li>
             <li><a class="dropdown-item" href="/ex11">Exercício 11</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">em construção</a></li>
+            <li><a class="dropdown-item" href="/ex12">Exercício 12</a></li>
+            <li><a class="dropdown-item" href="/ex13">Exercício 13</a></li>
+            <li><a class="dropdown-item" href="/ex14">Exercício 14</a></li>
+            <li><a class="dropdown-item" href="/ex15">Exercício 15</a></li>
           </ul>
         </li>
         <li class="nav-item">

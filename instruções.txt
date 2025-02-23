@@ -1,0 +1,2 @@
+Rodar a aplicação, execute 'php artisan server' na pasta raiz do projeto.
+Caso não rode, use 'composer update' na pasta raiz.
