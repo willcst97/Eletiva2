@@ -161,3 +161,27 @@ Route::post('/listaex13', function (Request $request) {
     $preco2 = $preco1 + $juros;
     return view('lista.ex13', compact('juros','preco2'));
 });
+
+Route::get('ex14', function () {
+    return view('/lista.ex14');
+});
+
+Route::post('/listaex14', function (Request $request) {
+    $preco1 = floatval($request->input('preco1'));
+    $taxa = floatval($request->input('taxa'));
+    $tempo = floatval($request->input('tempo'));
+    $preco2 = $preco1 + pow((1+$taxa), $tempo);
+    return view('lista.ex14', compact('preco2'));
+});
+
+Route::get('ex15', function () {
+    return view('/lista.ex15');
+});
+
+Route::post('/listaex15', function (Request $request) {
+    $dias = floatval($request->input('dias'));
+    $horas = $dias * 24;
+    $minutos = $horas * 60;
+    $segundos = $minutos * 60;
+    return view('lista.ex15', compact('dias','horas','minutos','segundos'));
+});
