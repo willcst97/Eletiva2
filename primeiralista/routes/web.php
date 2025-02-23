@@ -137,3 +137,15 @@ Route::post('/listaex11', function (Request $request) {
     $imc = $peso / ($altura * $altura);
     return view('lista.ex11', compact('imc'));
 });
+
+Rotas:
+Route::get('ex12', function () {
+    return view('/lista.ex12');
+});
+
+Route::post('/listaex12', function (Request $request) {
+    $preco1 = floatval($request->input('preco1'));
+    $desc = floatval($request->input('desconto'));
+    $preco2 = $preco1 - ($preco1 * ($desc / 100));
+    return view('lista.ex12', compact('preco1', 'preco2', 'desc'));
+});
