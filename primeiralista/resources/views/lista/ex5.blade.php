@@ -2,7 +2,7 @@
 
 @section('conteudo')
 
-<h2 class="mb-3">Calcular a área de um círculo.</h2>
+<h2 class="mb-3">Exercício 05: Calcular a área de um círculo.</h2>
 
 <!-- abaixo o código do formulário -->
 <form method="post" action="/listaex5"> <!-- sempre adicionar esse action para o laravel definindo a rota-->

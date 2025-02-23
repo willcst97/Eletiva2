@@ -2,7 +2,7 @@
 
 @section('conteudo')
 
-<h2 class="mb-3">Calcular o perímetro de um retângulo.</h2>
+<h2 class="mb-3">Exercício 06: Calcular o perímetro de um retângulo.</h2>
 
 <!-- abaixo o código do formulário -->
 <form method="post" action="/listaex6"> <!-- sempre adicionar esse action para o laravel definindo a rota-->

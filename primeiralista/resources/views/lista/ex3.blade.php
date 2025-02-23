@@ -1,8 +1,8 @@
-@extends('layout') <!-- layout básico par todas as páginas -->
+@extends('layout') <!-- layout básico para todas as páginas -->
 
 @section('conteudo')
 
-<h2 class="mb-3">Converter grau Fahrenheit em grau Celsius.</h2>
+<h2 class="mb-3">Exercício 03: Converter grau Fahrenheit em grau Celsius.</h2>
 
 <!-- abaixo o código do formulário -->
 <form method="post" action="/listaex3"> <!-- sempre adicionar esse action para o laravel definindo a rota-->

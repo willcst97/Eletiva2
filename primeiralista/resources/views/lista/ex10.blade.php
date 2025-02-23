@@ -2,7 +2,7 @@
 
 @section('conteudo')
 
-<h2 class="mb-3">Converter quilômetro em milha.</h2>
+<h2 class="mb-3">Exercício 10: Converter quilômetro em milha.</h2>
 
 <!-- abaixo o código do formulário -->
 <form method="post" action="/listaex10"> <!-- sempre adicionar esse action para o laravel definindo a rota-->

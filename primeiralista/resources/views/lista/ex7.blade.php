@@ -2,7 +2,7 @@
 
 @section('conteudo')
 
-<h2 class="mb-3">Calcular o perímetro de um círculo.</h2>
+<h2 class="mb-3">Exercício 07: Calcular o perímetro de um círculo.</h2>
 
 <!-- abaixo o código do formulário -->
 <form method="post" action="/listaex7"> <!-- sempre adicionar esse action para o laravel definindo a rota-->

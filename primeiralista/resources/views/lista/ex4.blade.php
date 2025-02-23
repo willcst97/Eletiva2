@@ -1,8 +1,8 @@
-@extends('layout') <!-- layout básico par todas as páginas -->
+@extends('layout') <!-- layout básico para todas as páginas -->
 
 @section('conteudo')
 
-<h2 class="mb-3">Calcular a área de um retângulo.</h2>
+<h2 class="mb-3">Exercício 04: Calcular a área de um retângulo.</h2>
 
 <!-- abaixo o código do formulário -->
 <form method="post" action="/listaex4"> <!-- sempre adicionar esse action para o laravel definindo a rota-->

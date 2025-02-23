@@ -2,7 +2,7 @@
 
 @section('conteudo')
 
-<h2 class="mb-3">Calcular IMC.</h2>
+<h2 class="mb-3">Exercício 11: Calcular IMC.</h2>
 
 <!-- abaixo o código do formulário -->
 <form method="post" action="/listaex11"> <!-- sempre adicionar esse action para o laravel definindo a rota-->
