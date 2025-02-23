@@ -138,7 +138,6 @@ Route::post('/listaex11', function (Request $request) {
     return view('lista.ex11', compact('imc'));
 });
 
-Rotas:
 Route::get('ex12', function () {
     return view('/lista.ex12');
 });
@@ -148,4 +147,17 @@ Route::post('/listaex12', function (Request $request) {
     $desc = floatval($request->input('desconto'));
     $preco2 = $preco1 - ($preco1 * ($desc / 100));
     return view('lista.ex12', compact('preco1', 'preco2', 'desc'));
+});
+
+Route::get('ex13', function () {
+    return view('/lista.ex13');
+});
+
+Route::post('/listaex13', function (Request $request) {
+    $preco1 = floatval($request->input('preco1'));
+    $taxa = floatval($request->input('taxa'));
+    $tempo = floatval($request->input('tempo'));
+    $juros = $preco1 * $taxa * $tempo;
+    $preco2 = $preco1 + $juros;
+    return view('lista.ex13', compact('juros','preco2'));
 });
