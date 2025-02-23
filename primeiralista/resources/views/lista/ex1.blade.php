@@ -9,27 +9,27 @@
 
     @csrf <!-- sempre usar para garantir a segurança no formulário -->
 
-    <div class="mb-3">
-        <label for="nota1" class="form-label">Digite a primeira nota:</label>
-        <input type="float" id="nota1" name="nota1" class="form-control" required="">
+    <div class="row">
+        <div class="col mb-3">
+            <label for="nota1" class="form-label">Digite a primeira nota:</label>
+            <input type="float" id="nota1" name="nota1" class="form-control" required="">
+        </div>
+        <div class="col mb-3">
+            <label for="nota2" class="form-label">Digite a segunda nota:</label>
+            <input type="float" id="nota2" name="nota2" class="form-control" required="">
+        </div>
+        <div class="col mb-3">
+            <label for="nota3" class="form-label">Digite a terceira nota:</label>
+            <input type="float" id="nota3" name="nota3" class="form-control" required="">
+        </div>
     </div>
 
-    <div class="mb-3">
-        <label for="nota2" class="form-label">Digite a segunda nota:</label>
-        <input type="float" id="nota2" name="nota2" class="form-control" required="">
-    </div>
-
-    <div class="mb-3">
-        <label for="nota3" class="form-label">Digite a terceira nota:</label>
-        <input type="float" id="nota3" name="nota3" class="form-control" required="">
-    </div>
-
-    <button type="submit" class="btn btn-primary">Enviar</button>
+    <button type="submit" class="btn btn-primary">Calcular</button>
 </form>
 
 @isset($media)
 <div class="mt-3 alert alert-success" role="alert">
-    A média é das 3 notas é {{$media}}.
+    A média das 3 notas é {{number_format($media,2,',','.')}}.
 </div>
 <!-- retorno do resultado da conta -->
 @endisset

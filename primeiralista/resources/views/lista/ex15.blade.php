@@ -16,7 +16,7 @@
         </div>
     </div>
 
-    <button type="submit" class="btn btn-primary">Calcular</button>
+    <button type="submit" class="btn btn-primary">Converter</button>
 </form>
 
 @isset($dias,$horas,$minutos,$segundos)

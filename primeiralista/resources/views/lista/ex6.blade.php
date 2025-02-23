@@ -9,14 +9,15 @@
 
     @csrf <!-- sempre usar para garantir a segurança no formulário -->
 
-    <div class="mb-3">
-        <label for="altura" class="form-label">Digite a altura do retângulo:</label>
-        <input type="float" id="altura" name="altura" class="form-control" required="">
-    </div>
-
-    <div class="mb-3">
-        <label for="largura" class="form-label">Digite a altura do retângulo:</label>
-        <input type="float" id="largura" name="largura" class="form-control" required="">
+    <div class="row">
+        <div class="col mb-3">
+            <label for="altura" class="form-label">Digite a altura do retângulo:</label>
+            <input type="float" id="altura" name="altura" class="form-control" required="">
+        </div>
+        <div class="col mb-3">
+            <label for="largura" class="form-label">Digite a altura do retângulo:</label>
+            <input type="float" id="largura" name="largura" class="form-control" required="">
+        </div>
     </div>
 
     <button type="submit" class="btn btn-primary">Calcular</button>

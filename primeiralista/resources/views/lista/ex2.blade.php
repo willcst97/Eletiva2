@@ -19,7 +19,7 @@
 
 @isset($grau,$grauconv)
 <div class="mt-3 alert alert-success" role="alert">
-    {{$grau}}°C = {{number_format($grauconv, 2, ',')}}°F.
+    {{number_format($grau,2,',','.')}}°C = {{number_format($grauconv, 2, ',','.')}}°F.
 </div>
 <!-- retorno do resultado da conta -->
 @endisset
