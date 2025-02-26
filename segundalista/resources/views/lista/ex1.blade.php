@@ -2,7 +2,8 @@
 
 @section('conteudo')
 
-<h2 class="mb-3">Exercício 01: Média de 3 notas.</h2>
+<h2 class="mb-1">Exercício 01: Soma de números diferentes.</h2>
+<p class="mb-3">Caso os dois números forem iguais, o retorno será o triplo da soma.</p>
 
 <!-- abaixo o código do formulário gerado pela aplicação da professora -->
 <form method="post" action="/listaex1"> <!-- sempre adicionar esse action para o laravel definindo a rota-->
@@ -11,16 +12,12 @@
 
     <div class="row">
         <div class="col mb-3">
-            <label for="nota1" class="form-label">Digite a primeira nota:</label>
+            <label for="nota1" class="form-label">Digite o primeiro número:</label>
             <input type="float" id="nota1" name="nota1" class="form-control" required="">
         </div>
         <div class="col mb-3">
-            <label for="nota2" class="form-label">Digite a segunda nota:</label>
+            <label for="nota2" class="form-label">Digite o segundo número:</label>
             <input type="float" id="nota2" name="nota2" class="form-control" required="">
-        </div>
-        <div class="col mb-3">
-            <label for="nota3" class="form-label">Digite a terceira nota:</label>
-            <input type="float" id="nota3" name="nota3" class="form-control" required="">
         </div>
     </div>
 
