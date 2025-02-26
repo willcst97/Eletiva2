@@ -22,7 +22,7 @@
 @isset($dias,$horas,$minutos,$segundos)
 <!-- retorno do resultado da conta -->
 <div class="mt-3 alert alert-success" role="alert">
-    {{$dias}} dias = {{$horas}} horas = {{$minutos}} minutos = {{$segundos}} segundos.
+    {{number_format($dias,0,',','.')}} dias = {{number_format($horas,0,',','.')}} horas = {{number_format($minutos,0,',','.')}} minutos = {{number_format($segundos,0,',','.')}} segundos.
 </div>
 @endisset
 
