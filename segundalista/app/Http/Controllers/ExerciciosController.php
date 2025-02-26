@@ -6,12 +6,10 @@ use Illuminate\Http\Request;
 
 class ExerciciosController extends Controller
 {
-    public function abrirFormEx1()
-    {
+    public function abrirFormEx1(){
         return view('lista.ex1');
     }
-    public function respostaEx1(Request $request)
-    {
+    public function respostaEx1(Request $request){
         $num1 = floatval($request->input('num1'));
         $num2 = floatval($request->input('num2'));
         if ($num1 === $num2) {
@@ -22,12 +20,10 @@ class ExerciciosController extends Controller
         return view('lista.ex1', compact('resultado'));
     }
 
-    public function abrirFormEx2()
-    {
+    public function abrirFormEx2(){
         return view('lista.ex2');
     }
-    public function respostaEx2(Request $request)
-    {
+    public function respostaEx2(Request $request){
         $valor1 = floatval($request->input('valor1'));
         $valor2 = floatval($request->input('valor2'));
         if ($valor1 === $valor2) {
@@ -41,12 +37,10 @@ class ExerciciosController extends Controller
         return view('lista.ex2', compact('resultado'));
     }
 
-    public function abrirFormEx3()
-    {
+    public function abrirFormEx3(){
         return view('lista.ex3');
     }
-    public function respostaEx3(Request $request)
-    {
+    public function respostaEx3(Request $request){
         $preco1 = floatval($request->input('preco1'));
         if ($preco1 >= 100) {
             $preco2 = $preco1 - ($preco1 * 0.15);
@@ -58,34 +52,32 @@ class ExerciciosController extends Controller
         return view('lista.ex3', compact('retorno'));
     }
 
-    public function abrirFormEx4()
-    {
+    public function abrirFormEx4(){
         return view('lista.ex4');
     }
-    public function respostaEx4(Request $request)
-    {
+    public function respostaEx4(Request $request){
         $valor = intval($request->input('valor'));
         $primos = [];
 
         for ($i = 2; $i <= $valor; $i++) {
-            $isPrimo = true;
+            $ehPrimo = true;
             for ($j = 2; $j < $i; $j++) {
                 if ($i % $j === 0) {
-                    $isPrimo = false;
+                    $ehPrimo = false;
                     break;
                 }
             }
-            if ($isPrimo) {
+            if ($ehPrimo) {
                 $primos[] = $i;
             }
         }
 
-        $resultado = "";
+        $retorno = "";
         foreach ($primos as $primo) {
-            $resultado .= $primo . ", ";
+            $retorno .= $primo . ", ";
         }
-        $resultado = rtrim($resultado, ", ");
+        $retorno = rtrim($retorno, ", ");
 
-        return view('primos.resultado', compact('resultado'));
+        return view('lista.ex4', compact('retorno'));
     }
 }

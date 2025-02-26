@@ -3,7 +3,7 @@
 @section('conteudo')
 
 <h2 class="mb-1">Exercício 04: Números primos.</h2>
-<p class="mb-3">Retorno será os números primos de 1 até o número enviado.</p>
+<p class="mb-3">Retorno será os números primos de 2 até o número enviado.</p>
 
 <!-- abaixo o código do formulário gerado pela aplicação da professora -->
 <form method="post" action="/listaex4"> <!-- sempre adicionar esse action para o laravel definindo a rota-->
