@@ -12,21 +12,21 @@
 
     <div class="row">
         <div class="col mb-3">
-            <label for="nota1" class="form-label">Digite o primeiro número:</label>
-            <input type="float" id="nota1" name="nota1" class="form-control" required="">
+            <label for="num1" class="form-label">Digite o primeiro número:</label>
+            <input type="number" id="num1" name="num1" class="form-control" required="">
         </div>
         <div class="col mb-3">
-            <label for="nota2" class="form-label">Digite o segundo número:</label>
-            <input type="float" id="nota2" name="nota2" class="form-control" required="">
+            <label for="num2" class="form-label">Digite o segundo número:</label>
+            <input type="number" id="num2" name="num2" class="form-control" required="">
         </div>
     </div>
 
     <button type="submit" class="btn btn-primary">Calcular</button>
 </form>
 
-@isset($media)
+@isset($resultado)
 <div class="mt-3 alert alert-success" role="alert">
-    A média das 3 notas é {{number_format($media,2,',','.')}}.
+    O resultado da operação é: {{$resultado}}.
 </div>
 <!-- retorno do resultado da conta -->
 @endisset

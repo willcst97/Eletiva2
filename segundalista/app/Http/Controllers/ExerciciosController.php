@@ -10,10 +10,15 @@ class ExerciciosController extends Controller
         return view('lista.ex1');
     }
     public function respostaEx1(Request $request){
-        $nota1 = floatval($request->input('nota1'));
-        $nota2 = floatval($request->input('nota2'));
-        $nota3 = floatval($request->input('nota3'));
-        $media = ($nota1 + $nota2 + $nota3) / 3;
-        return view('lista.ex1', compact('media'));
+        $num1 = floatval($request->input('num1'));
+        $num2 = floatval($request->input('num2'));
+        if ($num1 === $num2) {
+            $resultado = (3*($num1+$num2));
+            return $resultado;
+        } else {
+            $resultado = $num1 + $num2;
+            return $resultado;
+        }
+        return view('lista.ex1', compact('resultado'));
     }
 }
