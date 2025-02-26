@@ -14,11 +14,28 @@ class ExerciciosController extends Controller
         $num2 = floatval($request->input('num2'));
         if ($num1 === $num2) {
             $resultado = (3*($num1+$num2));
-            return $resultado;
         } else {
             $resultado = $num1 + $num2;
-            return $resultado;
         }
         return view('lista.ex1', compact('resultado'));
+    }
+
+    public function abrirFormEx2(){
+        return view('lista.ex2');
+    }
+    
+    public function respostaEx2(Request $request){
+        $valor1 = floatval($request->input('valor1'));
+        $valor2 = floatval($request->input('valor2'));
+    
+        if ($valor1 === $valor2) {
+            $resultado = "Números iguais: $valor1";
+        } else {
+            $valores = [$valor1, $valor2];
+            sort($valores);
+            $resultado = "Valores em ordem crescente: ".implode(' ', $valores);
+        }
+    
+        return view('lista.ex2', compact('resultado'));
     }
 }
