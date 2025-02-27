@@ -126,8 +126,18 @@ class ExerciciosController extends Controller
                     $nomeDoMes = 'Valor inválido';
             }
         }
-    
         return view('lista.ex5', compact('nomeDoMes'));
     }
 
+    public function abrirFormEx6(){
+        return view('lista.ex6');
+    } 
+    public function respostaEx6(Request $request){
+        $numero = intval($request->input('numero'));
+        $retorno = '';
+        for ($i = 1; $i <= $numero; $i++) {
+            $retorno .= $i . ' ';
+        }
+        return view('lista.ex6', compact('retorno'));
+    }
 }
