@@ -140,4 +140,18 @@ class ExerciciosController extends Controller
         }
         return view('lista.ex6', compact('retorno'));
     }
+
+    public function abrirFormEx7(){
+        return view('lista.ex7');
+    }
+    public function respostaEx7(Request $request){
+        $numero = intval($request->input('numero'));
+        $soma = 0;
+        $i = 1;
+        while ($i <= $numero) {
+            $soma += $i;
+            $i++;
+        } 
+        return view('lista.ex7', compact('numero','soma'));
+    }
 }
