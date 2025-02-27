@@ -19,7 +19,6 @@ class ExerciciosController extends Controller
         }
         return view('lista.ex1', compact('resultado'));
     }
-
     public function abrirFormEx2(){
         return view('lista.ex2');
     }
@@ -33,7 +32,6 @@ class ExerciciosController extends Controller
             sort($valores);
             $resultado = "Valores em ordem crescente: " . implode(' ', $valores);
         }
-
         return view('lista.ex2', compact('resultado'));
     }
 
@@ -48,7 +46,6 @@ class ExerciciosController extends Controller
         } else {
             $retorno = "Valor menor que R$ 100";
         }
-
         return view('lista.ex3', compact('retorno'));
     }
 
@@ -58,7 +55,6 @@ class ExerciciosController extends Controller
     public function respostaEx4(Request $request){
         $valor = intval($request->input('valor'));
         $primos = [];
-
         for ($i = 2; $i <= $valor; $i++) {
             $ehPrimo = true;
             for ($j = 2; $j < $i; $j++) {
@@ -71,7 +67,6 @@ class ExerciciosController extends Controller
                 $primos[] = $i;
             }
         }
-
         $retorno = "";
         foreach ($primos as $primo) {
             $retorno .= $primo . ", ";
@@ -80,4 +75,59 @@ class ExerciciosController extends Controller
 
         return view('lista.ex4', compact('retorno'));
     }
+
+    public function abrirFormEx5(){
+        return view('lista.ex5');
+    }
+    public function respostaEx5(Request $request){
+        $valor = intval($request->input('valor'));
+        $nomeDoMes = '';
+        if ($valor < 1 || $valor > 12) {
+            $nomeDoMes = "Permitido apenas valores de 1 a 12.";
+        } else {
+            switch ($valor) {
+                case 1:
+                    $nomeDoMes = "$valor = Janeiro";
+                    break;
+                case 2:
+                    $nomeDoMes = "$valor = Fevereiro";
+                    break;
+                case 3:
+                    $nomeDoMes = "$valor = Março";
+                    break;
+                case 4:
+                    $nomeDoMes = "$valor = Abril";
+                    break;
+                case 5:
+                    $nomeDoMes = "$valor = Maio";
+                    break;
+                case 6:
+                    $nomeDoMes = "$valor = Junho";
+                    break;
+                case 7:
+                    $nomeDoMes = "$valor = Julho";
+                    break;
+                case 8:
+                    $nomeDoMes = "$valor = Agosto";
+                    break;
+                case 9:
+                    $nomeDoMes = "$valor = Setembro";
+                    break;
+                case 10:
+                    $nomeDoMes = "$valor = Outubro";
+                    break;
+                case 11:
+                    $nomeDoMes = "$valor = Novembro";
+                    break;
+                case 12:
+                    $nomeDoMes = "$valor = Dezembro";
+                    break;
+                default:
+                    $nomeDoMes = 'Valor inválido';
+            }
+        }
+    
+        return view('lista.ex5', compact('nomeDoMes'));
+    }
+
 }
