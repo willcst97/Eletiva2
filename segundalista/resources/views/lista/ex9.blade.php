@@ -2,26 +2,26 @@
 
 @section('conteudo')
 
-<h2 class="mb-3">Exercício 08: Contagem regressiva a partir do número informado.</h2>
+<h2 class="mb-3">Exercício 09: Fatorial do número informado.</h2>
 
 <!-- abaixo o código do formulário gerado pela aplicação da professora -->
-<form method="post" action="/listaex8"> <!-- sempre adicionar esse action para o laravel definindo a rota-->
+<form method="post" action="/listaex9"> <!-- sempre adicionar esse action para o laravel definindo a rota-->
 
     @csrf <!-- sempre usar para garantir a segurança no formulário -->
 
     <div class="row">
         <div class="col mb-3">
-            <label for="valor" class="form-label">Digite o número:</label>
-            <input type="float" id="valor" name="valor" class="form-control" required="">
+            <label for="numero" class="form-label">Digite o número:</label>
+            <input type="float" id="numero" name="numero" class="form-control" required="">
         </div>
     </div>
 
     <button type="submit" class="btn btn-primary">Enviar</button>
 </form>
 
-@isset($resultado)
+@isset($numero,$fatorial)
 <div class="mt-3 alert alert-success" role="alert">
-    Contagem regressiva: {{$resultado}}
+    {{$numero}}! = {{number_format($fatorial,0,',','.')}}
 </div>
 <!-- retorno do resultado da conta -->
 @endisset
