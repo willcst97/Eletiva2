@@ -179,4 +179,16 @@ class ExerciciosController extends Controller
         }
         return view('lista.ex9', compact('numero','fatorial'));
     }
+
+    public function abrirFormEx10(){
+        return view('lista.ex10');
+    }
+    public function respostaEx10(Request $request){
+        $numero = intval($request->input('numero'));
+        $resultado = '| ';
+        for ($i = 1; $i <= 10; $i++) {
+            $resultado .= $numero . ' x ' . $i . ' = ' . ($numero * $i) . ' | ';
+        }
+        return view('lista.ex10', compact('resultado'));
+    }
 }
