@@ -154,4 +154,17 @@ class ExerciciosController extends Controller
         } 
         return view('lista.ex7', compact('numero','soma'));
     }
+
+    public function abrirFormEx8(){
+        return view('lista.ex8');
+    }
+    public function respostaEx8(Request $request){
+        $numero = intval($request->input('valor'));
+        $resultado = '';
+        do {
+            $resultado .= $numero . ' ';
+            $numero--;
+        } while ($numero >= 1);
+        return view('lista.ex8', compact('resultado'));
+    }
 }
